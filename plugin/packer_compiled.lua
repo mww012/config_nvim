@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  nerdtree = {
+    loaded = true,
+    path = "/Users/michael.wood1/.local/share/nvim/site/pack/packer/start/nerdtree",
+    url = "https://github.com/preservim/nerdtree"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/michael.wood1/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -98,6 +103,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/michael.wood1/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-abolish"] = {
+    loaded = true,
+    path = "/Users/michael.wood1/.local/share/nvim/site/pack/packer/start/vim-abolish",
+    url = "https://github.com/tpope/vim-abolish"
   }
 }
 
