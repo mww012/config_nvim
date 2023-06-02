@@ -20,3 +20,6 @@ vim.opt.signcolumn = "yes"
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
+
+-- Python settings
+-- vim.opt.loaded_python3_prog = 

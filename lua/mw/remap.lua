@@ -10,6 +10,6 @@ vim.keymap.set('n', '<F17>', function () require("dap").close() end) -- Shift+F5
 vim.keymap.set('n', '<F5>', function () require("dap").continue() end)
 vim.keymap.set('n', '<F6>', function () require("dap").step_over() end)
 vim.keymap.set('n', '<F7>', function () require("dap").step_into() end)
-vim.keymap.set('n', '<F8>', function () require("dap").repl.open() end)
+vim.keymap.set('n', '<F8>', function () require("dap").repl.toggle() end)
 
 ---/---

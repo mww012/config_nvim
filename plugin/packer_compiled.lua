@@ -170,6 +170,11 @@ _G.packer_plugins = {
     path = "/Users/michael.wood1/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["todoist.nvim"] = {
+    loaded = true,
+    path = "/Users/michael.wood1/.local/share/nvim/site/pack/packer/start/todoist.nvim",
+    url = "https://github.com/romgrk/todoist.nvim"
+  },
   undotree = {
     loaded = true,
     path = "/Users/michael.wood1/.local/share/nvim/site/pack/packer/start/undotree",

@@ -57,5 +57,6 @@ return require('packer').startup(function(use)
     use "b0o/incline.nvim"
     ---/---
     --- Misc ---
+    use ( 'romgrk/todoist.nvim', { run = ':TodoistInstall'})
     ---/---
 end)
