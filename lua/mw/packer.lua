@@ -45,12 +45,24 @@ return require('packer').startup(function(use)
     end
     }
 
+    --- Dev ---
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
     --- Debugging ---
+    use {
+        "folke/neodev.nvim",
+        require("neodev").setup({
+            library = { plugins = { "nvim-dap-ui" }, types = true },
+            })
+        }
     use 'mfussenegger/nvim-dap' -- Debugger framework
     use 'mfussenegger/nvim-dap-python' -- Python Debugger
     use 'theHamsta/nvim-dap-virtual-text' -- Debugging virt text support
     use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
-    use "folke/neodev.nvim"
     ---/---
 
     --- UI Lines ---
