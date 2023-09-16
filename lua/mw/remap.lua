@@ -6,13 +6,16 @@ vim.keymap.set('t', '<tab>t', function () vim.cmd('NeoTermEnterNormal') end)
 --- Debugging ---
 vim.keymap.set('n', '<leader>dui', function () require("dapui").toggle() end)
 vim.keymap.set('n', '<leader>b', function () require("dap").toggle_breakpoint() end)
-vim.keymap.set('n', '<F17>', function () require("dap").close() end) -- Shift+F5 maps to F17, Ctrl+F5 maps to F29
+vim.keymap.set('n', '<F17>', function () require("dap").terminate() end) -- Shift+F5 maps to F17, Ctrl+F5 maps to F29
 vim.keymap.set('n', '<F5>', function () require("dap").continue() end)
 vim.keymap.set('n', '<F6>', function () require("dap").step_over() end)
 vim.keymap.set('n', '<F7>', function () require("dap").step_into() end)
 vim.keymap.set('n', '<F8>', function () require("dap").repl.toggle() end)
 ---/---
 
+--- Pane Movement ---
+-- vim.keymap.set('n', '<A-k>', ':wincmd k')
+-- vim.keymap.set('n', 'ALT-J', ':wincmd j')
 --- Comments ---
--- vim.keymap.set('n', '<ctrl>?', <Plug>(comment_toggle_linewise))
+-- vim.keymap.set('n', '<C-_>', <Plug>(comment_toggle_linewise))
 ---/---
