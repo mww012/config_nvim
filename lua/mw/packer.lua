@@ -53,12 +53,12 @@ return require('packer').startup(function(use)
         end
     }
     --- Debugging ---
-    use {
-        "folke/neodev.nvim",
-        require("neodev").setup({
-            library = { plugins = { "nvim-dap-ui" }, types = true },
-            })
-        }
+    -- use {
+        -- "folke/neodev.nvim",
+        -- require("neodev").setup({
+            -- library = { plugins = { "nvim-dap-ui" }, types = true },
+            -- })
+        -- }
     use 'mfussenegger/nvim-dap' -- Debugger framework
     use 'mfussenegger/nvim-dap-python' -- Python Debugger
     use 'theHamsta/nvim-dap-virtual-text' -- Debugging virt text support
